@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="techniques1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Maven Pro:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="techniques1">
+      <div class="t-rect1"></div>
+      <div class="active-recall">
+        <p class="active">Active</p>
+        <p class="active">Recall</p>
+      </div>
+      <div class="t-rect2" id="tRect2"></div>
+      <div class="pomodoro-technique">
+        <p class="active">Pomodoro</p>
+        <p class="active">Technique</p>
+      </div>
+      <div class="t-rect3"></div>
+      <div class="sq3r">SQ3R</div>
+      <div class="t-rect4"></div>
+      <div class="retrieval-practice">
+        <p class="active">Retrieval</p>
+        <p class="active">Practice</p>
+      </div>
+      <div class="t-rect5"></div>
+      <div class="t-rect6"></div>
+      <div class="spaced-practice">
+        <p class="active">Spaced</p>
+        <p class="active">Practice</p>
+      </div>
+      <div class="pq4r">PQ4R</div>
+      <div class="t-rect7"></div>
+      <div class="feynman-technique">
+        <p class="active">Feynman</p>
+        <p class="active">Technique</p>
+      </div>
+      <div class="t-rect8"></div>
+      <div class="leitner-system">
+        <p class="active">Leitner</p>
+        <p class="active">System</p>
+      </div>
+      <div class="header">
+        <nav class="nav">
+        <img class="logopng" alt="" src="/imgs/logopng.png" data-scroll-to="logopng1Image"/>
+          <a href="desktop1.php" class="nav_logo">Study Smart</a>
+          <ul class="nav_items">
+            <li class="nav_item">
+              <a href="#" class="nav_link">Home</a>
+              <a href="desktop1.php/#categories" class="nav_link">Categories</a>
+              <a href="desktop1.php/#about_us" class="nav_link">About Us</a>
+              <a href="desktop1.php/#contact" class="nav_link">Contact</a>
+            </li>
+          </ul>
+          <button class="button" id="form-open">Login</button>
+        </nav>
+      </div>
+
+      <div class="study-techniques">STUDY TECHNIQUES</div>
+        <div class="next">
+            <img class="next-item" alt="" src="/imgs/arrow_right.svg" />
+        </div>
+    </div>
+
+    <script>
+      var tRect2 = document.getElementById("tRect2");
+      if (tRect2) {
+        tRect2.addEventListener("click", function (e) {
+          window.location.href = "./pomodoro.html";
+        });
+      }
+      
+      var aboutUsText = document.getElementById("aboutUsText");
+      if (aboutUsText) {
+        aboutUsText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='aBOUTUSText']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "./desktop1.php";
+        });
+      }
+      </script>
+  </body>
+</html>

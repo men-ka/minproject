@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Maven Pro:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="profile" id="profileContainer">
+      <button class="login-wrapper">
+        <div class="login">
+          <span class="span"> </span>
+          <span class="login1">Login</span>
+        </div>
+      </button>
+      <button class="signup">
+        <div class="sign-up">Sign Up</div>
+      </button>
+      <div class="user">
+        <div class="user1">User</div>
+        <img class="image-1-icon" alt="" src="/imgs/userdp.svg" />
+      </div>
+    </div>
+
+    <script>
+      var profileContainer = document.getElementById("profileContainer");
+      if (profileContainer) {
+        profileContainer.addEventListener("click", function (e) {
+          window.location.href = "login.html";
+        });
+      }
+      </script>
+  </body>
+</html>

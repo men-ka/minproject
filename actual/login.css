@@ -1,0 +1,88 @@
+body{
+    font-family: Maven Pro;
+}
+input{
+    border: 0;
+}
+.password {
+    border: 0;
+    font-size: 17px;
+    background-color: transparent;
+    position: absolute;
+    top: 297px;
+    left: 29px;
+    color: rgba(0, 0, 0, 0.58);
+    text-align: left;
+    display: inline-block;
+    width: 73px;
+    height: 23px;
+  }
+  .pw-line{
+    left: calc(25% - 75px);
+    position: relative;
+    top: 318.5px;
+    /* left: 24.5px; */
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    width: 387px;
+  }
+  .uname-line {
+    position: absolute;
+    top: 212.5px;
+    left: 24.5px;
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    width: 387px;
+  }
+  .login {
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 75px);
+    font-weight: 600;
+  }
+  .login1 {
+    align-self: stretch;
+    position: relative;
+  }
+  .loginb,
+  .username {
+    position: absolute;
+    left: 33px;
+  }
+  .loginb {
+    width: calc(100% - 89.92px);
+    right: 56.92px;
+    bottom: 210.07px;
+    border-radius: 20px;
+    background-color: #B4BED0;
+    display: flex;
+    flex-direction: column;
+    padding: 19px 114.0775146484375px;
+    box-sizing: border-box;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 29px;
+    color: black;
+  }
+  .username {
+    border: 0;
+    font-size: 17px;
+    background-color: transparent;
+    top: 190px;
+    color:rgba(0, 0, 0, 0.58);
+    text-align: left;
+    display: inline-block;
+    width: 98px;
+  }
+  .loginpage {
+    position: relative;
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    height: 711px;
+    text-align: center;
+    font-size: 48px;
+    color: #4e4c4c;
+    font-family: Maven Pro;
+  }
+  
