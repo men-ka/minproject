@@ -12,7 +12,7 @@ if(isset($_POST['upload'])){
         $image_folder='../imgs/'.$t_img;  
 
         if($t_img_size > 2000000){
-            $message[]='image is too large';
+            echo 'image is too large';
         }
         else{
             $INSERT = mysqli_query($conn, "INSERT INTO techniques (t_name, t_desc, t_img)
@@ -20,18 +20,13 @@ if(isset($_POST['upload'])){
 
                 if($INSERT){
                     move_uploaded_file($t_img_tmp,$image_folder);
-                    $message[]='product uploaded'; 
+                    echo 'product uploaded';
                 }
                 else{
-                    $message[]='product upload failed'; 
+                    echo 'product upload failed'; 
                 }
         }
 
 }
-
-
-
-
-
-
 ?>
+<a href="techniquesA.html"><button>Go back</button></a>
