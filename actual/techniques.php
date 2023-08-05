@@ -31,7 +31,7 @@ $result = $conn->query($sql);
                             <td><?php echo $row['t_id']; ?></td>
                             <td><?php echo $row['t_name']; ?></td>
                             <td><?php echo $row['t_desc']; ?></td>
-                            <td><img src="./imgs/<?php echo $row['t_img']; ?>" width="250" height="150" ></td>
+                            <td><img src="/imgs/<?php echo $row['t_img']; ?>" width="250" height="150" ></td>
                             <td><a class="btn btn-info" href="update_t.php?t_id=<?php echo $row['t_id']; ?>">Edit</a>&nbsp;
                             <a class="btn btn-danger" href="delete_t.php?t_id=<?php echo $row['t_id']; ?>">Delete</a></td>
                             </tr>                    
