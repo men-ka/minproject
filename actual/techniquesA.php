@@ -9,7 +9,7 @@ if(isset($_POST['upload'])){
         $t_img= $_FILES["upload_img"]["name"];
         $t_img_size= $_FILES["upload_img"]["size"];
         $t_img_tmp = $_FILES["upload_img"]["tmp_name"];
-        $image_folder='../imgs/'.$t_img;  
+        $image_folder='./imgs/'.$t_img;  
 
         if($t_img_size > 2000000){
             echo 'image is too large';
