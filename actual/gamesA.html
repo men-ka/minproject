@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Study Techniques</title>
+    <!-- add tools to db -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./contents.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h2>Games</h2>
+    <form action="gamesA.php" method="POST" enctype="multipart/form-data" >
+      <label for="g_name">Game Name:</label>
+      <input type="text" name="g_name" id="g_name">
+      <br>
+      <label for="g_desc">Description</label>
+      <input type="text" name="g_desc" id="g_desc">
+      <br>
+      <label for="g_img">Image</label>
+      <input class="img" type="file" name="upload_img"  accept="image/jpg, image/jpeg, image/png, image/svg" required>
+      <br>
+      <button type="submit" value="upload" name="upload" >Upload</button>
+
+    </form><br>
+    <a href="games.php"><button>Go back</button></a>
+  </body>
+</html>
+<style>
+    body{
+        font-family: 'Rubik', sans-serif;
+    }
+</style>
