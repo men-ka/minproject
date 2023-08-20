@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Study Techniques</title>
+    <!-- add video details to db -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h2>Video</h2>
+    <form action="videosA.php" method="POST" enctype="multipart/form-data" >
+      <label for="v_name">Video Name:</label>
+      <input type="text" name="v_name" id="v_name">
+      <br>
+      <label for="v_link">Link</label>
+      <input type="text" name="v_link" id="v_link">
+      <br>
+      <button type="submit" value="upload" name="upload" >Upload</button>
+
+    </form><br>
+    <a href="videos.php"><button>Go back</button></a>
+  </body>
+</html>
+<style>
+    body{
+        font-family: 'Rubik', sans-serif;
+    }
+</style>

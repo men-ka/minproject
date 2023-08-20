@@ -26,10 +26,10 @@ include "configA.php";
                 $g_id = $row['g_id'];
             }   
 ?>
-    <h2>User Update Form</h2>
+    <h2>Game Update Form</h2>
     <form action="" method="post">
         <fieldset>
-            <legend>Personal information:</legend>
+            <legend>Game information:</legend>
             <label for="g_name">Technique Name:</label>
             <input type="text" id ="g_name" name="g_name" value="<?php echo $g_name; ?>">
             <input type="hidden" name="g_id" value="<?php echo $g_id; ?>">
